@@ -1,0 +1,15 @@
+[Unit]
+Description=Jellyfin Metadata Tagging Service
+After=network.target
+
+[Service]
+# Change main user if running service as non-root
+# User=your-user
+WorkingDirectory=/path/to/jellyfin-metadata-tagging
+ExecStart=/usr/bin/python3 app.py
+EnvironmentFile=/path/to/jellyfin-metadata-tagging/.env
+Environment="PYTHONUNBUFFERED=1"
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
