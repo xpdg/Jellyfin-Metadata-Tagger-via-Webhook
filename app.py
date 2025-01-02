@@ -5,13 +5,16 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Got it's so ugly
+# .... It works though ....
+# Good thing i remembered [Insomnia](https://insomnia.rest/) existed.....
+
 def create_response(message, status_code):
     """Reusable function to create JSON responses."""
     return jsonify(message), status_code
 
 app = Flask(__name__)
 
-# Jellyfin Server Configuration
 JELLYFIN_API_KEY = os.getenv("JELLYFIN_API_KEY")
 JELLYFIN_SERVER_URL = os.getenv("JELLYFIN_SERVER_URL")
 TARGET_USERNAME = os.getenv("TARGET_USERNAME")
