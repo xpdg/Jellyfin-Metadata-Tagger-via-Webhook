@@ -23,7 +23,7 @@ This Python application listens for incoming webhooks (e.g., from Jellyseerr) an
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/xpdg/jellyfin-metadata-tagger.git
+   git clone https://github.com/xpdg/Jellyfin-Metadata-Tagger-via-Webhook.git
    cd jellyfin-metadata-tagger
    ```
 
